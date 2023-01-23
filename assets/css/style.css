@@ -1,20 +1,8 @@
 
   
-nav{
-    font-family: "Roboto";
-    background-color:#3A5199;
-    font-size:20px;
-    font-weight: 800;
-    position: fixed;
-    width: 100vw;
-    text-decoration: none;
-    z-index: 1;
-}
 
 
 #skills{
-   
-
     display: grid;
     padding-top: 3rem;
    
@@ -83,16 +71,15 @@ span{
  
 }
 #MiExperiencia h2{
+    font-family: "Poppins";
     font-weight: 600;
     font-size: 48px;
 }
 #MisultimosTrabajos{
-   
-    float: right;
-    width: 75%;
+   padding: 30px;
     font-family: 'Plus Jakarta Sans', sans-serif;
     color:#151719;
-    padding: 2rem;
+
    
 }
 #MisultimosTrabajos h2 {
@@ -100,14 +87,14 @@ span{
 color:#fff
 }
 
-#Contacto{
-   
-    padding: 30px;
+#redes{
     font-family: "Poppins";
     font-size: 16px;
-    
+    float:right;
+   
    
 }
+
 #presentavc{
    
     color: #fff;
@@ -119,14 +106,7 @@ color:#fff
   
 }
 
-#redes{
-    float: center;
-    width: 25%;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-}
+
 footer{
    
     padding-top: 3rem;
@@ -204,4 +184,24 @@ body{
     background-attachment: fixed;
     background-size: cover;
     color: #fff;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            150px,
+            1fr
+        )
+        gap: 16px;
+    );
+}
+.card-shadow{
+    color: #fff;
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.card-shadow:hover{
+    transform: scale3d(1.5, 1.5, 0.3);
+        -webkit-transform: scale3d(1.5, 1.5, 0.3);
+        -moz-transform: scale3d(1.5, 1.5, 0.3);
 }
