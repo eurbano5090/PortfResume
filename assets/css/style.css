@@ -191,7 +191,7 @@ body{
             150px,
             1fr
         )
-        gap: 16px;
+        gap(16px)
     );
 }
 .card-shadow{
