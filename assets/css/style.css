@@ -170,7 +170,7 @@ span::before{
     position: fixed;
     width: 200px;
     height: 100%;
-    background: #200a4b;
+    background: #222222;
     color: #151719;
     left: -200px;
     transition: all 500ms linear;
