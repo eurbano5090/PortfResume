@@ -1,11 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
   const btnToggle = document.querySelector(".toggle-btn");
   const btnSwitch = document.querySelector(".switch");
+  const sidebar = document.getElementById("sidebar");
+  const mainContent = document.getElementById("main-content");
 
   btnToggle.addEventListener("click", function () {
     console.log("click");
-    document.getElementById("sidebar").classList.toggle("active");
-    console.log(document.getElementById("sidebar"));
+    sidebar.classList.toggle("active");
+    mainContent.classList.toggle("shifted");
+    console.log(sidebar);
   });
 
   $("p").click(function () {

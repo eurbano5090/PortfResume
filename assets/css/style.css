@@ -180,6 +180,16 @@ span::before{
     left: 0px;
   }
   
+  #main-content {
+    transition: margin-left 500ms linear;
+    margin-left: 0; /* Sin margen cuando el sidebar está oculto */
+  }
+  
+  #main-content.shifted {
+    margin-left: 200px; /* Ajusta el margen cuando el sidebar está visible */
+  }
+
+
   #sidebar ul li {
     color: rgba(63, 57, 57, 0.9);
     list-style: none;
